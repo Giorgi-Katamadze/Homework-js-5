@@ -1,0 +1,32 @@
+body{
+    background-color: #82CD47;
+    font-family:'VT323', monospace;
+    font-size:x-large;
+}
+.box{
+    width: 100vw;
+    height: 100vh;
+}
+.box-el{
+    background-color: #F0FF42;
+    padding: 200px;
+    padding-top: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 70%;
+    width: 100px;
+}
+a:hover{
+    top: 69%;
+    background-color: red;
+    color: black;
+}

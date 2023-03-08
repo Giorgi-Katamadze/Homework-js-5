@@ -1,0 +1,151 @@
+body {
+  background-color: #82cd47;
+  font-family: "VT323", monospace;
+  padding: 100px;
+  font-size: x-large;
+}
+.box {
+    width: 500px;
+  padding: 50px;
+  padding-top: 25px;
+  background-color: #f0ff42;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+.head,
+.body{
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.hair {
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  top: 10%;
+  border-radius: 50% 50% 0 0;
+  z-index: 5;
+}
+
+.face {
+  width: 80px;
+  height: 80px;
+  background-color: #fcd5b6;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left:10px;
+  z-index: 2;
+}
+
+.eye-l {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+.eye-r {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 65%;
+}
+
+.nose {
+  width: 8px;
+  height: 8px;
+  background-color: #d97558;
+  border-radius: 50%;
+  position:absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.mouth {
+  width: 30px;
+  height: 10px;
+  background-color: #d97558;
+  border-radius: 50% 50% 0 0;
+  position:absolute;
+  top: 70%;
+  left: 30%;
+}
+
+.shirt {
+  width: 80px;
+  height: 80px;
+  background-color: #6b8e23;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  z-index: 2;
+}
+
+.pants {
+  width: 80px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  top: 100%;
+  left: 8%;
+}
+
+.shoes {
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  top: 130%;
+  left: 28%;
+}
+.hand-l{
+    background-color: #fcd5b6;
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    transform: rotate(-30Deg);
+    top: 50%;
+    left: -20%;
+}
+.hand-r{
+    background-color: #fcd5b6;
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: rotate(30Deg);
+}
+a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    top: 80%;
+    left: 47%;
+}
+a:hover{
+    background-color: red;
+    color: black;
+    top: 79%;
+}
+.back{
+    top: 2%;
+    left: 90%;
+}
+.back:hover{
+    top: 1%;
+}
+
