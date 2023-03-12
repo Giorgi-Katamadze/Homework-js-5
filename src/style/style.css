@@ -1,5 +1,5 @@
 body{
-    background-color: #82CD47;
+    background-color: #C9EEFF;
     font-family:'VT323', monospace;
     font-size:x-large;
 }
@@ -8,7 +8,7 @@ body{
     height: 100vh;
 }
 .box-el{
-    background-color: #F0FF42;
+    background-color: #E9EDC9;
     padding: 200px;
     padding-top: 150px;
     border: 1px solid black;
@@ -22,11 +22,30 @@ a{
     text-align: center;
     color: black;
     position: absolute;
-    top: 70%;
-    width: 100px;
+    left: 53%;
+    padding: 4px;
+   
 }
+
 a:hover{
-    top: 69%;
+    top:57%;
     background-color: red;
     color: black;
+} 
+
+button{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    padding: 4px;
+    position: absolute;
 }
+
+button:hover{
+    top:57%;
+    background-color: red;
+    color: black;
+} 
