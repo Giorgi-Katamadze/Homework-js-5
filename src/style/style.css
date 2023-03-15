@@ -22,29 +22,11 @@ a{
     text-align: center;
     color: black;
     position: absolute;
-    left: 53%;
     padding: 4px;
    
 }
 
 a:hover{
-    top:57%;
-    background-color: red;
-    color: black;
-} 
-
-button{
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 6px;
-    text-align: center;
-    color: black;
-    background-color: transparent;
-    padding: 4px;
-    position: absolute;
-}
-
-button:hover{
     top:57%;
     background-color: red;
     color: black;

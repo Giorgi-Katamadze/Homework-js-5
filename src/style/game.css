@@ -2,7 +2,7 @@ body{
     background-color: #C9EEFF;
     font-family:'VT323', monospace;
     font-size:x-large;
-    padding: 30px;
+    padding: 10px;
 }
 canvas{
     border: 1px solid black;
@@ -10,4 +10,27 @@ canvas{
 }
 img{
     display: none;
+}
+h6{
+    display: inline-block;
+}
+.point{
+    text-align: center;
+}
+
+a{
+  position: absolute;
+  left: 90%;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+  color: black;
+  background-color: transparent;
+  padding: 4px;
+}
+a:hover{
+    top:1%;
+    background-color: red;
+    color: black;
 }
