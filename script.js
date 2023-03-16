@@ -103,7 +103,7 @@ function update(){
             gameOver = true
             alert('Game Over')
             window.location.reload();
-            moveEnemyRed = false;
+            moveEnemyOne = false;
            }
         if (player.y + 50 >= enemyTwo.y &&
             player.y <= enemyTwo.y + 40 &&
@@ -112,7 +112,7 @@ function update(){
             gameOver = true
             alert('Game Over')
             window.location.reload();
-            moveEnemyRed = false;
+            moveEnemyTwo = false;
            }
         if (player.y + 50 >= enemyThree.y &&
             player.y <= enemyThree.y + 40 &&
@@ -121,7 +121,7 @@ function update(){
             gameOver = true
             alert('Game Over')
             window.location.reload();
-            moveEnemyRed = false;
+            moveEnemyThree = false;
            }
 
         if( player.x + 40 >= coin.x &&
