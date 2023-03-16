@@ -74,7 +74,7 @@ window.onload = function() {
     context = canvas.getContext("2d"); 
     setInterval(update,1000/10)
     getCoin()
-    getMashroom();
+    setTimeout(getMashroom, 10000)
 }
 
 function update(){
@@ -101,7 +101,7 @@ function update(){
             player.x + 15 >= enemyOne.x &&
             player.x <= enemyOne.x + 20){
             gameOver = true
-            // alert('Game Over')
+            alert('Game Over')
             window.location.reload();
             moveEnemyRed = false;
            }
@@ -110,7 +110,7 @@ function update(){
             player.x + 15 >= enemyTwo.x &&
             player.x <= enemyTwo.x + 20){
             gameOver = true
-            // alert('Game Over')
+            alert('Game Over')
             window.location.reload();
             moveEnemyRed = false;
            }
@@ -119,7 +119,7 @@ function update(){
             player.x + 15 >= enemyThree.x &&
             player.x <= enemyThree.x + 20){
             gameOver = true
-            // alert('Game Over')
+            alert('Game Over')
             window.location.reload();
             moveEnemyRed = false;
            }
@@ -136,6 +136,14 @@ function update(){
             player.y + 30 >= mashroom.y &&
             player.y <= mashroom.y + 20){
                 getMashroom()
+                mashroom.x = -100
+                mashroom.y = -100
+                enemyOne.speedY++
+                enemyTwo.speedY++
+                enemyThree.speedY++
+                setTimeout(function(){
+                    getMashroom()
+                 } , 20000) 
                 points+=5
         }
     if(gameOver){
@@ -214,7 +222,7 @@ function moveEnemyThree (){
     enemyThree.x += enemyThree.speedY
     if(enemyThree.x >= canvas.width){
         enemyThree.x = 0 - enemyThree.w
-        enemyThree.y = Math.floor(Math.random() * (cols))* blockSize
+        enemyThree.y = Math.floor(Math.random() * (rows))* blockSize
     }
 }
 
