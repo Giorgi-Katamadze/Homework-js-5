@@ -2,6 +2,7 @@ const rows = 20;
 const cols = 30;
 const blockSize = 25;
 let points = 0;
+let highestScore = 0;
 const player = {
     w: 75,
     h: 75,
@@ -68,6 +69,7 @@ function drawEnemyThree (){
 }
 let gameOver = false
 window.onload = function() {
+    highestScore = localStorage.getItem("highestScore") || 0;
     canvas = document.getElementById("canvas");
     canvas.height = rows * blockSize;
     canvas.width = cols * blockSize;
@@ -92,6 +94,14 @@ function update(){
     moveEnemyTwo()
     moveEnemyThree()
     drawPlayer()
+    context.fillStyle = "black";
+context.font = "16px Arial";
+context.fillText("Your Highest Score: " + highestScore, canvas.width - 180, 20);
+
+    if (points > highestScore) {
+        highestScore = points;
+        localStorage.setItem("highestScore", highestScore);
+    }
     let inputValue = localStorage.getItem("userName")
     context.fillStyle = "black";
     context.font = "16px Arial";
@@ -147,6 +157,10 @@ function update(){
                 points+=5
         }
     if(gameOver){
+        if (points > highestScore) {
+            highestScore = points;
+            localStorage.setItem("highestScore", highestScore);
+        }
         points = 0;
         return;
     }
